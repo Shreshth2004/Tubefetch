@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('1.jpg');
+            background-size:1500px 1000px;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .header {
+            background-color: #111;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header img {
+            width: 100px;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 10px;
+        }
+
+        .banner {
+            background-image: url('getvids-banner.jpg');
+            background-size: cover;
+            background-position: center center;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            padding: 60px;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+        }
+
+        .banner .button {
+            background-color: #e50914;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #ff3a33;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .row img {
+            width: 200px;
+            object-fit: contain;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .row img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="1.png" alt="GetvidsLogo" size="500px">
+        <div class="nav">
+            <a href="#">Home</a>
+            <!-- <a href="#">TV Shows</a>
+            <a href="#">Movies</a> -->
+            <a href="#">contact-Us</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <h1>Welcome to Getvids</h1>
+        <button class="button">Start</button>
+    </div>
+
+    <div class="row">
+        <img src="movie1.jpg" alt="Movie 1">
+        <img src="movie2.jpg" alt="Movie 2">
+        <img src="movie3.jpg" alt="Movie 3">
+        <img src="movie4.jpg" alt="Movie 4">
+        <img src="movie5.jpg" alt="Movie 5">
+    </div>
+
+    <!-- Add more rows for different categories -->
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='pod.jpg') }}");
+            background-size: cover;
+            background-position: center 50%;
+            background-color: #000;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-align: center; /* Center text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            align-items: center; /* Center content horizontally */
+            height: 100vh;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 20px 0; /* Add top margin */
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            background-color: #E74C3C;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #C0392B;
+        }
+
+        /* Style the button hover effect */
+        .button:hover {
+            background-color: #C0392B;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO GETVIDS</h1>
+    <div class="button-container">
+        <button id="getStartedButton" class="button">Get Started</button>
+    </div>
+    <script>
+        document.getElementById('getStartedButton').addEventListener('click', function() {
+            window.location.href = "{{ url_for('paste_url') }}";
+        });
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paste URL</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='img1.png') }}");
+            font-family: Arial, sans-serif;
+            background-color: black;
+            background-size: cover;
+            background-position: center 30%;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #f1f1f1;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            /* Apply styles to make the input box attractive */
+            background-color: #f5f5f5;
+            color: #333;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #217dbb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Paste a URL</h1>
+    <form method="post">
+        <label for="url">URL:</label>
+        <!-- Apply the styles to the input box -->
+        <input type="text" id="url" name="url" placeholder="Enter URL here">
+        <input type="submit" value="Download Video">
+    </form>
+    <div id="downloading-message" style="display: none;">Video is downloading...</div>
+</body>
+</html>
